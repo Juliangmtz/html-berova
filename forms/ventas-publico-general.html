@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Berova - Ventas Publico</title>
+    <meta
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+      name="viewport"
+    />
+    <link
+      rel="icon"
+      href="../assets/img/kaiadmin/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- Fonts and icons -->
+    <script src="../assets/js/plugin/webfont/webfont.min.js"></script>
+    <script>
+      WebFont.load({
+        google: { families: ["Public Sans:300,400,500,600,700"] },
+        custom: {
+          families: [
+            "Font Awesome 5 Solid",
+            "Font Awesome 5 Regular",
+            "Font Awesome 5 Brands",
+            "simple-line-icons",
+          ],
+          urls: ["../assets/css/fonts.min.css"],
+        },
+        active: function () {
+          sessionStorage.fonts = true;
+        },
+      });
+    </script>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/plugins.min.css" />
+    <link rel="stylesheet" href="../assets/css/kaiadmin.min.css" />
+
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <div class="sidebar" data-background-color="dark">
+        <div class="sidebar-logo">
+          <!-- Logo Header -->
+          <div class="logo-header" data-background-color="dark">
+            <a href="../index.html" class="logo">
+              <img
+                src="../assets/img/kaiadmin/logo_light.webp"
+                alt="navbar brand"
+                class="navbar-brand"
+                height="50"
+              />
+            </a>
+            <div class="nav-toggle">
+              <button class="btn btn-toggle toggle-sidebar">
+                <i class="gg-menu-right"></i>
+              </button>
+              <button class="btn btn-toggle sidenav-toggler">
+                <i class="gg-menu-left"></i>
+              </button>
+            </div>
+            <button class="topbar-toggler more">
+              <i class="gg-more-vertical-alt"></i>
+            </button>
+          </div>
+          <!-- End Logo Header -->
+        </div>
+        <div class="sidebar-wrapper scrollbar scrollbar-inner">
+          <div class="sidebar-content">
+            <ul class="nav nav-secondary">
+              <li class="nav-item">
+                <a
+                  data-bs-toggle="collapse"
+                  href="#dashboard"
+                  class="collapsed"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-home"></i>
+                  <p>Inicio</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="dashboard">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="index.html">
+                        <span class="sub-item">Página Inicial</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-section">
+                <span class="sidebar-mini-icon">
+                  <i class="fa fa-ellipsis-h"></i>
+                </span>
+                <h4 class="text-section">Components</h4>
+              </li>
+              <!-- <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#base">
+                  <i class="fas fa-layer-group"></i>
+                  <p>Base</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="base">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="../components/avatars.html">
+                        <span class="sub-item">Avatars</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../components/buttons.html">
+                        <span class="sub-item">Buttons</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../components/gridsystem.html">
+                        <span class="sub-item">Grid System</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../components/panels.html">
+                        <span class="sub-item">Panels</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../components/notifications.html">
+                        <span class="sub-item">Notifications</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../components/sweetalert.html">
+                        <span class="sub-item">Sweet Alert</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../components/font-awesome-icons.html">
+                        <span class="sub-item">Font Awesome Icons</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../components/simple-line-icons.html">
+                        <span class="sub-item">Simple Line Icons</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../components/typography.html">
+                        <span class="sub-item">Typography</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li> -->
+              <!-- <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#sidebarLayouts">
+                  <i class="fas fa-th-list"></i>
+                  <p>Sidebar Layouts</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="sidebarLayouts">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="../sidebar-style-2.html">
+                        <span class="sub-item">Sidebar Style 2</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../icon-menu.html">
+                        <span class="sub-item">Icon Menu</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li> -->
+              <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#sidebarLayouts">
+                  <i class="fas fa-th-list"></i>
+                  <p>Punto Venta</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="sidebarLayouts">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="ventas.html">
+                        <span class="sub-item">Venta</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="ventas-publico-general.html">
+                        <span class="sub-item">Venta Público General</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#forms">
+                  <i class="fas fa-pen-square"></i>
+                  <p>Formularios</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="forms">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="clientes.html">
+                        <span class="sub-item">Clientes</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="configuraciones.html">
+                        <span class="sub-item">Configuraciones</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="departamentos.html">
+                        <span class="sub-item">Departamentos</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="fraccionamientos.html">
+                        <span class="sub-item">Fraccionamientos</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="informacion.html">
+                        <span class="sub-item">Información</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="productos.html">
+                        <span class="sub-item">Productos</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="tipodepago.html">
+                        <span class="sub-item">Tipo de Pago</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="vendedores.html">
+                        <span class="sub-item">Vendedores</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#maps">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <p>Maps</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="maps">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="../maps/googlemaps.html">
+                        <span class="sub-item">Google Maps</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../maps/jsvectormap.html">
+                        <span class="sub-item">Jsvectormap</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#charts">
+                  <i class="far fa-chart-bar"></i>
+                  <p>Charts</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="charts">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="../charts/charts.html">
+                        <span class="sub-item">Chart Js</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../charts/sparkline.html">
+                        <span class="sub-item">Sparkline</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="../widgets.html">
+                  <i class="fas fa-desktop"></i>
+                  <p>Widgets</p>
+                  <span class="badge badge-success">4</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../../../documentation/index.html">
+                  <i class="fas fa-file"></i>
+                  <p>Documentation</p>
+                  <span class="badge badge-secondary">1</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#submenu">
+                  <i class="fas fa-bars"></i>
+                  <p>Menu Levels</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="submenu">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a data-bs-toggle="collapse" href="#subnav1">
+                        <span class="sub-item">Level 1</span>
+                        <span class="caret"></span>
+                      </a>
+                      <div class="collapse" id="subnav1">
+                        <ul class="nav nav-collapse subnav">
+                          <li>
+                            <a href="#">
+                              <span class="sub-item">Level 2</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <span class="sub-item">Level 2</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <a data-bs-toggle="collapse" href="#subnav2">
+                        <span class="sub-item">Level 1</span>
+                        <span class="caret"></span>
+                      </a>
+                      <div class="collapse" id="subnav2">
+                        <ul class="nav nav-collapse subnav">
+                          <li>
+                            <a href="#">
+                              <span class="sub-item">Level 2</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="sub-item">Level 1</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Sidebar -->
+
+      <div class="main-panel">
+        <div class="main-header">
+          <div class="main-header-logo">
+            <!-- Logo Header -->
+            <div class="logo-header" data-background-color="dark">
+              <a href="../index.html" class="logo">
+                <img
+                  src="../assets/img/kaiadmin/logo_light.svg"
+                  alt="navbar brand"
+                  class="navbar-brand"
+                />
+              </a>
+              <div class="nav-toggle">
+                <button class="btn btn-toggle toggle-sidebar">
+                  <i class="gg-menu-right"></i>
+                </button>
+                <button class="btn btn-toggle sidenav-toggler">
+                  <i class="gg-menu-left"></i>
+                </button>
+              </div>
+              <button class="topbar-toggler more">
+                <i class="gg-more-vertical-alt"></i>
+              </button>
+            </div>
+            <!-- End Logo Header -->
+          </div>
+          <!-- Navbar Header -->
+          <nav
+            class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom"
+          >
+            <div class="container-fluid">
+              <nav
+                class="navbar navbar-header-left navbar-expand-lg navbar-form nav-search p-0 d-none d-lg-flex"
+              >
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <button type="submit" class="btn btn-search pe-1">
+                      <i class="fa fa-search search-icon"></i>
+                    </button>
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Search ..."
+                    class="form-control"
+                  />
+                </div>
+              </nav>
+
+              <ul class="navbar-nav topbar-nav ms-md-auto align-items-center">
+                <li
+                  class="nav-item topbar-icon dropdown hidden-caret d-flex d-lg-none"
+                >
+                  <a
+                    class="nav-link dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    href="#"
+                    role="button"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                  >
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <ul class="dropdown-menu dropdown-search animated fadeIn">
+                    <form class="navbar-left navbar-form nav-search">
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          placeholder="Search ..."
+                          class="form-control"
+                        />
+                      </div>
+                    </form>
+                  </ul>
+                </li>
+                <li class="nav-item topbar-icon dropdown hidden-caret">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="messageDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                  <ul
+                    class="dropdown-menu messages-notif-box animated fadeIn"
+                    aria-labelledby="messageDropdown"
+                  >
+                    <li>
+                      <div
+                        class="dropdown-title d-flex justify-content-between align-items-center"
+                      >
+                        Messages
+                        <a href="#" class="small">Mark all as read</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="message-notif-scroll scrollbar-outer">
+                        <div class="notif-center">
+                          <a href="#">
+                            <div class="notif-img">
+                              <img
+                                src="../assets/img/jm_denis.jpg"
+                                alt="Img Profile"
+                              />
+                            </div>
+                            <div class="notif-content">
+                              <span class="subject">Jimmy Denis</span>
+                              <span class="block"> How are you ? </span>
+                              <span class="time">5 minutes ago</span>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div class="notif-img">
+                              <img
+                                src="../assets/img/chadengle.jpg"
+                                alt="Img Profile"
+                              />
+                            </div>
+                            <div class="notif-content">
+                              <span class="subject">Chad</span>
+                              <span class="block"> Ok, Thanks ! </span>
+                              <span class="time">12 minutes ago</span>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div class="notif-img">
+                              <img
+                                src="../assets/img/mlane.jpg"
+                                alt="Img Profile"
+                              />
+                            </div>
+                            <div class="notif-content">
+                              <span class="subject">Jhon Doe</span>
+                              <span class="block">
+                                Ready for the meeting today...
+                              </span>
+                              <span class="time">12 minutes ago</span>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div class="notif-img">
+                              <img
+                                src="../assets/img/talha.jpg"
+                                alt="Img Profile"
+                              />
+                            </div>
+                            <div class="notif-content">
+                              <span class="subject">Talha</span>
+                              <span class="block"> Hi, Apa Kabar ? </span>
+                              <span class="time">17 minutes ago</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <a class="see-all" href="javascript:void(0);"
+                        >See all messages<i class="fa fa-angle-right"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item topbar-icon dropdown hidden-caret">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="notifDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <i class="fa fa-bell"></i>
+                    <span class="notification">4</span>
+                  </a>
+                  <ul
+                    class="dropdown-menu notif-box animated fadeIn"
+                    aria-labelledby="notifDropdown"
+                  >
+                    <li>
+                      <div class="dropdown-title">
+                        You have 4 new notification
+                      </div>
+                    </li>
+                    <li>
+                      <div class="notif-scroll scrollbar-outer">
+                        <div class="notif-center">
+                          <a href="#">
+                            <div class="notif-icon notif-primary">
+                              <i class="fa fa-user-plus"></i>
+                            </div>
+                            <div class="notif-content">
+                              <span class="block"> New user registered </span>
+                              <span class="time">5 minutes ago</span>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div class="notif-icon notif-success">
+                              <i class="fa fa-comment"></i>
+                            </div>
+                            <div class="notif-content">
+                              <span class="block">
+                                Rahmad commented on Admin
+                              </span>
+                              <span class="time">12 minutes ago</span>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div class="notif-img">
+                              <img
+                                src="../assets/img/profile2.jpg"
+                                alt="Img Profile"
+                              />
+                            </div>
+                            <div class="notif-content">
+                              <span class="block">
+                                Reza send messages to you
+                              </span>
+                              <span class="time">12 minutes ago</span>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div class="notif-icon notif-danger">
+                              <i class="fa fa-heart"></i>
+                            </div>
+                            <div class="notif-content">
+                              <span class="block"> Farrah liked Admin </span>
+                              <span class="time">17 minutes ago</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <a class="see-all" href="javascript:void(0);"
+                        >See all notifications<i class="fa fa-angle-right"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item topbar-icon dropdown hidden-caret">
+                  <a
+                    class="nav-link"
+                    data-bs-toggle="dropdown"
+                    href="#"
+                    aria-expanded="false"
+                  >
+                    <i class="fas fa-layer-group"></i>
+                  </a>
+                  <div class="dropdown-menu quick-actions animated fadeIn">
+                    <div class="quick-actions-header">
+                      <span class="title mb-1">Quick Actions</span>
+                      <span class="subtitle op-7">Shortcuts</span>
+                    </div>
+                    <div class="quick-actions-scroll scrollbar-outer">
+                      <div class="quick-actions-items">
+                        <div class="row m-0">
+                          <a class="col-6 col-md-4 p-0" href="#">
+                            <div class="quick-actions-item">
+                              <div class="avatar-item bg-danger rounded-circle">
+                                <i class="far fa-calendar-alt"></i>
+                              </div>
+                              <span class="text">Calendar</span>
+                            </div>
+                          </a>
+                          <a class="col-6 col-md-4 p-0" href="#">
+                            <div class="quick-actions-item">
+                              <div
+                                class="avatar-item bg-warning rounded-circle"
+                              >
+                                <i class="fas fa-map"></i>
+                              </div>
+                              <span class="text">Maps</span>
+                            </div>
+                          </a>
+                          <a class="col-6 col-md-4 p-0" href="#">
+                            <div class="quick-actions-item">
+                              <div class="avatar-item bg-info rounded-circle">
+                                <i class="fas fa-file-excel"></i>
+                              </div>
+                              <span class="text">Reports</span>
+                            </div>
+                          </a>
+                          <a class="col-6 col-md-4 p-0" href="#">
+                            <div class="quick-actions-item">
+                              <div
+                                class="avatar-item bg-success rounded-circle"
+                              >
+                                <i class="fas fa-envelope"></i>
+                              </div>
+                              <span class="text">Emails</span>
+                            </div>
+                          </a>
+                          <a class="col-6 col-md-4 p-0" href="#">
+                            <div class="quick-actions-item">
+                              <div
+                                class="avatar-item bg-primary rounded-circle"
+                              >
+                                <i class="fas fa-file-invoice-dollar"></i>
+                              </div>
+                              <span class="text">Invoice</span>
+                            </div>
+                          </a>
+                          <a class="col-6 col-md-4 p-0" href="#">
+                            <div class="quick-actions-item">
+                              <div
+                                class="avatar-item bg-secondary rounded-circle"
+                              >
+                                <i class="fas fa-credit-card"></i>
+                              </div>
+                              <span class="text">Payments</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="nav-item topbar-user dropdown hidden-caret">
+                  <a
+                    class="dropdown-toggle profile-pic"
+                    data-bs-toggle="dropdown"
+                    href="#"
+                    aria-expanded="false"
+                  >
+                    <div class="avatar-sm">
+                      <img
+                        src="../assets/img/profile.jpg"
+                        alt="..."
+                        class="avatar-img rounded-circle"
+                      />
+                    </div>
+                    <span class="profile-username">
+                      <span class="op-7">Hola,</span>
+                      <span class="fw-bold">Berova</span>
+                    </span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-user animated fadeIn">
+                    <div class="dropdown-user-scroll scrollbar-outer">
+                      <li>
+                        <div class="user-box">
+                          <div class="avatar-lg">
+                            <img
+                              src="../assets/img/profile.jpg"
+                              alt="image profile"
+                              class="avatar-img rounded"
+                            />
+                          </div>
+                          <div class="u-text">
+                            <h4>Suc. Puerta Grande</h4>
+                            <p class="text-muted">hello@example.com</p>
+                            
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">My Profile</a>
+                        <a class="dropdown-item" href="#">My Balance</a>
+                        <a class="dropdown-item" href="#">Inbox</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Account Setting</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Logout</a>
+                      </li>
+                    </div>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- End Navbar -->
+        </div>
+
+        <div class="container">
+          <div class="page-inner">
+            <div class="page-header">
+              <h3 class="fw-bold mb-3">Forms</h3>
+              <ul class="breadcrumbs mb-3">
+                <li class="nav-home">
+                  <a href="#">
+                    <i class="icon-home"></i>
+                  </a>
+                </li>
+                <li class="separator">
+                  <i class="icon-arrow-right"></i>
+                </li>
+                <li class="nav-item">
+                  <a href="#">Forms</a>
+                </li>
+                <li class="separator">
+                  <i class="icon-arrow-right"></i>
+                </li>
+                <li class="nav-item">
+                  <a href="#">Basic Form</a>
+                </li>
+              </ul>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card">           
+                                <div class="row">
+                                    <div class="col-md-12">
+                                      <div class="card">
+                                        <div class="card-header">
+                                            <div class="card-title">Ingrese los datos de Venta</div>
+                                        </div>
+                                        <div class="card-body">
+
+                                          <form id="ventaForm">
+                                            <!-- Encabezado: Folio, Vendedor, Ciudad, Estado, País, Fecha y Hora -->
+                                            <div class="row mb-3">
+                                                <!-- Izquierda: Folio, Vendedor, Ciudad, Estado, País -->
+                                                <div class="col-md-4 col-lg-4">
+                                                    <div>
+                                                        <label style="font-weight: bold; font-size: 1.2em;">Folio:</label>
+                                                        <span id="folioTexto" style="font-size: 1.2em; margin-left: 10px;">Cargando...</span>
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        <label style="font-weight: bold; font-size: 1.2em;">Vendedor:</label>
+                                                        <span id="vendedorTexto" style="font-size: 1.1em; margin-left: 10px;">Cargando...</span>
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        <label style="font-weight: bold; font-size: 1.2em;">Caja:</label>
+                                                        <span id="cajaTexto" style="font-size: 1.1em; margin-left: 10px;">Cargando...</span>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- Ciudad, Estado, País -->
+                                                <div class="col-md-4 col-lg-4">
+                                                    <div class="mt-2">
+                                                        <label style="font-weight: bold; font-size: 1.2em;">Ciudad:</label>
+                                                        <span style="font-size: 1.1em; margin-left: 10px;">Reynosa</span>
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        <label style="font-weight: bold; font-size: 1.2em;">Estado:</label>
+                                                        <span style="font-size: 1.1em; margin-left: 10px;">Tamaulipas</span>
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        <label style="font-weight: bold; font-size: 1.2em;">País:</label>
+                                                        <span style="font-size: 1.1em; margin-left: 10px;">MEXICO</span>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- Derecha: Fecha y Hora -->
+                                                <div class="col-md-4 col-lg-4 text-end">
+                                                    <label style="font-weight: bold;">Fecha y Hora Actual:</label>
+                                                    <p id="fechaHoraActual" style="font-weight: bold;"></p>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Nombre, Apellidos -->
+                                            <!-- Nombre, RFC y CP (ahora son solo visualización) -->
+<div class="row">
+  <div class="col-md-4 col-lg-4">
+      <div class="form-group">
+          <label>Nombre</label>
+          <p class="form-control-static" id="nombre_cliente">Cargando...</p>
+      </div>
+  </div>
+  <div class="col-md-4 col-lg-4">
+      <div class="form-group">
+          <label>RFC</label>
+          <p class="form-control-static" id="rfc">Cargando...</p>
+      </div>
+  </div>
+  <div class="col-md-4 col-lg-4">
+      <div class="form-group">
+          <label>CP</label>
+          <p class="form-control-static" id="cp">Cargando...</p>
+      </div>
+  </div>
+</div>
+                                            
+                                            <!-- Buscadores -->
+                                            <div class="card-header mt-3">
+                                                <div class="card-title">Buscador de productos</div>
+                                            </div>
+                                            
+                                            <div class="d-flex flex-wrap align-items-start">
+                                                <!-- Buscadores -->
+                                                <nav class="navbar navbar-expand-lg navbar-light bg-light rounded me-2 mb-2">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <button type="button" class="btn btn-outline-secondary">
+                                                                <i class="fa fa-search"></i>
+                                                            </button>
+                                                        </div>
+                                                        <input type="text" class="form-control" id="buscarNombre" placeholder="Buscar Nombre..." />
+                                                    </div>
+                                                </nav>
+                                                
+                                                <nav class="navbar navbar-expand-lg navbar-light bg-light rounded ms-2 mb-2 me-3">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <button type="button" class="btn btn-outline-secondary">
+                                                                <i class="fa fa-search"></i>
+                                                            </button>
+                                                        </div>
+                                                        <input type="text" class="form-control" id="buscarFolio" placeholder="Buscar Folio..." />
+                                                    </div>
+                                                </nav>
+                                                
+                                                <!-- Subtotal, IVA y Total visual -->
+                                                <div class="d-flex flex-column justify-content-start mb-2">
+                                                    <p><strong>Sub Total:</strong> $<span id="subTotal">0.00</span></p>
+                                                    <p><strong>IVA:</strong> $<span id="iva">0.00</span></p>
+                                                    <p><strong>Total:</strong> $<span id="total">0.00</span></p>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Tabla de productos -->
+                                            <div class="card-body">
+                                                <div class="card-sub"></div>
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>ID de Folio</th>
+                                                                <th>ID de Producto</th>
+                                                                <th>Descripción</th>
+                                                                <th>Precio Compra</th>
+                                                                <th>Precio Venta</th>
+                                                                <th>Precio Publico</th>
+                                                                <th>Acciones</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody id="tablaProductos">
+                                                            <!-- Los productos se agregarán aquí dinámicamente -->
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>                                     
+                                            <!-- Forma de pago -->
+                                            <div class="row mt-3">
+                                              <div class="col-md-4 col-lg-4">
+                                                  <div class="form-group">
+                                                      <label for="forma_pago">Forma de Pago</label>
+                                                      <select class="form-control" id="forma_pago">
+                                                          <!-- Las opciones se cargarán dinámicamente aquí -->
+                                                      </select>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          
+                                            <!-- Botones -->
+                                            <div class="mt-3 d-flex gap-3">
+                                                <button type="button" class="btn btn-danger" id="btnCancelar">Cancelar</button>
+                                                <button type="button" class="btn btn-info text-white">Más Info</button>
+                                                <button type="submit" class="btn btn-success">Generar Orden</button>
+                                            </div>
+                                        </form>
+                                        
+                                        <script>
+                                          // Variables globales
+                                          let productosSeleccionados = [];
+                                          let folioActual = 0;
+                                          let ivaPorcentaje = 0;
+                                          let clienteGeneral = null;
+                                        
+                                          // Función para actualizar fecha y hora
+                                          function actualizarFechaHora() {
+                                            const ahora = new Date();
+                                            const fecha = ahora.toISOString().split('T')[0];
+                                            const hora = ahora.toLocaleTimeString('es-MX', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+                                            document.getElementById('fechaHoraActual').textContent = `${fecha} ${hora}`;
+                                          }
+                                        
+                                          // Función para cargar datos iniciales
+                                          async function cargarDatosIniciales() {
+                                            try {
+                                              const vendedor = JSON.parse(localStorage.getItem('vendedor'));
+                                              const caja = localStorage.getItem('caja');
+                                              document.getElementById('vendedorTexto').textContent = vendedor ? vendedor.nombre : 'No disponible';
+                                              document.getElementById('cajaTexto').textContent = caja || 'No disponible';
+                                              
+                                              const configRes = await fetch('https://muebleria-vap7.onrender.com/configuracion');
+                                              if (!configRes.ok) {
+                                                console.error('Error al obtener configuración:', configRes.status, '-', configRes.statusText);
+                                                return;
+                                              }
+                                              const configuracion = await configRes.json();
+                                              folioActual = parseInt(configuracion.folio_venta) + 1;
+                                              ivaPorcentaje = parseFloat(configuracion.cobra_iva);
+                                              document.getElementById('folioTexto').textContent = folioActual.toString().padStart(5, '0');
+                                        
+                                              const clienteRes = await fetch('https://muebleria-vap7.onrender.com/clientes/1');
+                                              if (!clienteRes.ok) {
+                                                console.error('Error al obtener cliente general:', clienteRes.status, '-', clienteRes.statusText);
+                                                return;
+                                              }
+                                              clienteGeneral = await clienteRes.json();
+                                              document.getElementById('nombre_cliente').textContent = `${clienteGeneral.nombre} ${clienteGeneral.apellido_paterno} ${clienteGeneral.apellido_materno}`;
+                                              document.getElementById('rfc').textContent = clienteGeneral.RFC || 'No disponible';
+                                              document.getElementById('cp').textContent = clienteGeneral.codigo_postal || 'No disponible';
+                                        
+                                              const formasPagoRes = await fetch('https://muebleria-vap7.onrender.com/tipopago/tipo');
+                                              if (!formasPagoRes.ok) {
+                                                console.error('Error al obtener formas de pago:', formasPagoRes.status, '-', formasPagoRes.statusText);
+                                                return;
+                                              }
+                                              const formasPago = await formasPagoRes.json();
+                                              const selectFormaPago = document.getElementById('forma_pago');
+                                              selectFormaPago.innerHTML = '';
+                                              formasPago.forEach(pago => {
+                                                const option = document.createElement('option');
+                                                option.value = pago.id_tipo_pago;
+                                                option.textContent = pago.descripcion;
+                                                selectFormaPago.appendChild(option);
+                                              });
+                                        
+                                            } catch (error) {
+                                              console.error('Error cargando datos iniciales:', error);
+                                            }
+                                          }
+                                        
+                                          // Función para calcular totales
+                                          function calcularTotales() {
+  let subtotal = 0;
+  let total = 0;
+
+  productosSeleccionados.forEach(producto => {
+    subtotal += parseFloat(producto.precio_venta_momento); // sumamos precio de venta momento
+    total += parseFloat(producto.precio_publico); // sumamos precio público
+  });
+
+  document.getElementById('subTotal').textContent = subtotal.toFixed(2); // subtotal: venta_momento
+  document.getElementById('iva').textContent = '0.00'; // IVA fijo en 0
+  document.getElementById('total').textContent = total.toFixed(2); // total: precio público
+}
+
+                                        
+                                          // Función para agregar producto a la tabla
+                                          function agregarProductoATabla(prod) {
+                                            // Agregar a la lista de productos seleccionados
+                                            productosSeleccionados.push({
+                                              id_producto: prod.id_producto,
+                                              descripcion: prod.nombre,
+                                              precio_compra: prod.precio_compra,
+                                              precio_venta_momento: prod.precio_venta,
+                                              precio_publico: prod.precio_venta_final
+                                            });
+                                        
+                                            // Crear fila en la tabla
+                                            const fila = document.createElement('tr');
+                                            fila.dataset.idProducto = productosSeleccionados.length - 1;
+                                            fila.innerHTML = `
+                                              <td>${prod.folio || '-'}</td>
+                                              <td>${prod.id_producto}</td>
+                                              <td>${prod.nombre}</td>
+                                              <td>$${prod.precio_compra.toFixed(2)}</td>
+                                              <td>$${prod.precio_venta.toFixed(2)}</td>
+                                              <td>$${prod.precio_venta_final.toFixed(2)}</td>
+                                              <td>
+                                                <button class="btn btn-sm btn-danger btn-eliminar">Eliminar</button>
+                                              </td>
+                                            `;
+                                            document.getElementById('tablaProductos').appendChild(fila);
+                                        
+                                            // Evento para el botón Eliminar
+                                            fila.querySelector('.btn-eliminar').addEventListener('click', function() {
+                                              eliminarProducto(fila);
+                                            });
+                                        
+                                            // Actualizar totales
+                                            calcularTotales();
+                                          }
+                                        
+                                          // Función para eliminar producto
+                                          function eliminarProducto(fila) {
+                                            const index = Array.from(fila.parentNode.children).indexOf(fila);
+                                            productosSeleccionados.splice(index, 1);
+                                            fila.remove();
+                                            calcularTotales();
+                                          }
+                                        
+                                          // Función para enviar la venta
+                                          async function enviarVenta(event) {
+                                            event.preventDefault();
+                                        
+                                            if (productosSeleccionados.length === 0) {
+                                              alert('Debe agregar al menos un producto');
+                                              return;
+                                            }
+                                        
+                                            const subTotal = parseFloat(document.getElementById('subTotal').textContent);
+                                            const ivaCalculado = parseFloat(document.getElementById('iva').textContent);
+                                            const total = parseFloat(document.getElementById('total').textContent);
+                                        
+                                            const vendedor = JSON.parse(localStorage.getItem('vendedor'));
+                                            const caja = localStorage.getItem('caja');
+                                            const formaPagoId = document.getElementById('forma_pago').value;
+                                        
+                                            try {
+                                              const response = await fetch('https://muebleria-vap7.onrender.com/venta/publicogeneral', {
+                                                method: 'POST',
+                                                headers: {
+                                                  'Content-Type': 'application/json',
+                                                },
+                                                body: JSON.stringify({
+                                                  caja: caja,
+                                                  vendedor: vendedor ? vendedor.nombre : 'Vendedor no identificado',
+                                                  sub_total: subTotal,
+                                                  iva: ivaCalculado,
+                                                  total: total,
+                                                  forma_pago: formaPagoId,
+                                                  productos: productosSeleccionados
+                                                })
+                                              });
+                                        
+                                              const result = await response.json();
+                                        
+                                              if (response.ok) {
+                                                alert('Venta registrada con éxito');
+                                                productosSeleccionados = [];
+                                                document.getElementById('tablaProductos').innerHTML = '';
+                                                calcularTotales();
+                                                await cargarDatosIniciales();
+                                              } else {
+                                                alert('Error al registrar la venta: ' + (result.mensaje || 'Error desconocido'));
+                                              }
+                                            } catch (error) {
+                                              console.error('Error al enviar la venta:', error);
+                                              alert('Error al conectar con el servidor');
+                                            }
+                                          }
+                                        
+                                          document.addEventListener('DOMContentLoaded', function() {
+                                            // Configurar fecha y hora
+                                            setInterval(actualizarFechaHora, 1000);
+                                            actualizarFechaHora();
+                                        
+                                            // Cargar datos iniciales
+                                            cargarDatosIniciales();
+                                        
+                                            // Configurar buscadores
+                                            const buscarNombre = document.querySelector('#buscarNombre');
+                                            const buscarFolio = document.querySelector('#buscarFolio');
+                                        
+                                            let indexSeleccionadoNombre = -1;
+                                            let indexSeleccionadoFolio = -1;
+                                            let productos = [];
+                                        
+                                            function crearContenedorSugerencias(input) {
+                                              const sugerencias = document.createElement('div');
+                                              sugerencias.style.position = 'absolute';
+                                              sugerencias.style.backgroundColor = 'white';
+                                              sugerencias.style.border = '1px solid #ccc';
+                                              sugerencias.style.width = input.offsetWidth + 'px';
+                                              sugerencias.style.maxHeight = '200px';
+                                              sugerencias.style.overflowY = 'auto';
+                                              sugerencias.style.zIndex = '1000';
+                                              sugerencias.classList.add('sugerencias');
+                                              document.body.appendChild(sugerencias);
+                                              return sugerencias;
+                                            }
+                                        
+                                            const sugerenciasNombre = crearContenedorSugerencias(buscarNombre);
+                                            const sugerenciasFolio = crearContenedorSugerencias(buscarFolio);
+                                        
+                                            function posicionarSugerencias(input, sugerencias) {
+                                              const rect = input.getBoundingClientRect();
+                                              sugerencias.style.top = (rect.bottom + window.scrollY) + 'px';
+                                              sugerencias.style.left = (rect.left + window.scrollX) + 'px';
+                                            }
+                                        
+                                            async function buscarProductos(inputType) {
+                                              const nombre = buscarNombre.value.trim();
+                                              const folio = buscarFolio.value.trim();
+                                        
+                                              if (!nombre && !folio) {
+                                                sugerenciasNombre.innerHTML = '';
+                                                sugerenciasFolio.innerHTML = '';
+                                                return;
+                                              }
+                                        
+                                              let url = 'https://muebleria-vap7.onrender.com/productos/barra?';
+                                              if (nombre) url += `nombre=${encodeURIComponent(nombre)}&`;
+                                              if (folio) url += `folio=${encodeURIComponent(folio)}`;
+                                        
+                                              try {
+                                                const res = await fetch(url);
+                                                if (!res.ok) {
+                                                  console.error('Error al buscar productos:', res.status, '-', res.statusText);
+                                                  return;
+                                                }
+                                                productos = await res.json();
+                                                mostrarSugerencias(productos, inputType);
+                                              } catch (error) {
+                                                console.error('❌ Error buscando productos:', error);
+                                              }
+                                            }
+                                        
+                                            function mostrarSugerencias(productos, inputType) {
+                                              const sugerencias = inputType === 'nombre' ? sugerenciasNombre : sugerenciasFolio;
+                                              sugerencias.innerHTML = '';
+                                        
+                                              if (productos.length === 0) {
+                                                sugerencias.innerHTML = '<div class="p-2">No hay resultados</div>';
+                                                return;
+                                              }
+                                        
+                                              productos.forEach((prod, index) => {
+                                                const item = document.createElement('div');
+                                                item.className = 'p-2 border-bottom';
+                                                item.style.cursor = 'pointer';
+                                                item.textContent = `${prod.nombre} - $${prod.precio_venta_final.toFixed(2)}`;
+                                                item.dataset.index = index;
+                                        
+                                                item.addEventListener('click', function() {
+                                                  agregarProductoATabla(prod);
+                                                  sugerencias.innerHTML = '';
+                                                  if (inputType === 'nombre') buscarNombre.value = '';
+                                                  if (inputType === 'folio') buscarFolio.value = '';
+                                                });
+                                        
+                                                sugerencias.appendChild(item);
+                                              });
+                                        
+                                              // Eliminado el manejo del evento keydown para Enter
+                                              sugerencias.setAttribute('tabindex', '0');
+                                              sugerencias.focus();
+                                            }
+                                        
+                                            function actualizarSelección(index, inputType) {
+                                              const sugerencias = inputType === 'nombre' ? sugerenciasNombre : sugerenciasFolio;
+                                              const items = sugerencias.querySelectorAll('div');
+                                              items.forEach((item, idx) => {
+                                                item.style.backgroundColor = idx === index ? '#e0e0e0' : 'white';
+                                              });
+                                            }
+                                        
+                                            buscarNombre.addEventListener('input', function() {
+                                              posicionarSugerencias(buscarNombre, sugerenciasNombre);
+                                              buscarProductos('nombre');
+                                              indexSeleccionadoNombre = -1;
+                                            });
+                                        
+                                            buscarFolio.addEventListener('input', function() {
+                                              posicionarSugerencias(buscarFolio, sugerenciasFolio);
+                                              buscarProductos('folio');
+                                              indexSeleccionadoFolio = -1;
+                                            });
+                                        
+                                            document.addEventListener('click', function(event) {
+                                              if (!buscarNombre.contains(event.target) && !sugerenciasNombre.contains(event.target)) {
+                                                sugerenciasNombre.innerHTML = '';
+                                              }
+                                              if (!buscarFolio.contains(event.target) && !sugerenciasFolio.contains(event.target)) {
+                                                sugerenciasFolio.innerHTML = '';
+                                              }
+                                            });
+                                        
+                                            // Evento para el botón cancelar
+                                            document.getElementById('btnCancelar').addEventListener('click', function() {
+                                              if (confirm('¿Está seguro que desea cancelar esta venta?')) {
+                                                productosSeleccionados = [];
+                                                document.getElementById('tablaProductos').innerHTML = '';
+                                                calcularTotales();
+                                              }
+                                            });
+                                        
+                                            // Evento para el formulario
+                                            document.getElementById('ventaForm').addEventListener('submit', enviarVenta);
+                                          });
+                                        </script>
+                                  
+                                  
+                                  
+
+                               
+                                
+                                
+                                
+      <!-- End Custom template -->
+    </div>
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+
+    <!-- jQuery Scrollbar -->
+    <script src="../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+    <!-- Chart JS -->
+    <script src="../assets/js/plugin/chart.js/chart.min.js"></script>
+
+    <!-- jQuery Sparkline -->
+    <script src="../assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+
+    <!-- Chart Circle -->
+    <script src="../assets/js/plugin/chart-circle/circles.min.js"></script>
+
+    <!-- Datatables -->
+    <script src="../assets/js/plugin/datatables/datatables.min.js"></script>
+
+    <!-- Bootstrap Notify -->
+    <script src="../assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+    <!-- jQuery Vector Maps -->
+    <script src="../assets/js/plugin/jsvectormap/jsvectormap.min.js"></script>
+    <script src="../assets/js/plugin/jsvectormap/world.js"></script>
+
+    <!-- Google Maps Plugin -->
+    <script src="../assets/js/plugin/gmaps/gmaps.js"></script>
+
+    <!-- Sweet Alert -->
+    <script src="../assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+
+    <!-- Kaiadmin JS -->
+    <script src="../assets/js/kaiadmin.min.js"></script>
+
+    <!-- Kaiadmin DEMO methods, don't include it in your project! -->
+    <script src="../assets/js/setting-demo2.js"></script>
+  </body>
+</html>

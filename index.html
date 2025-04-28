@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Berova - Login</title>
+    <meta
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+      name="viewport"
+    />
+    <link
+      rel="icon"
+      href="assets/img/kaiadmin/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- Fonts and icons -->
+    <script src="assets/js/plugin/webfont/webfont.min.js"></script>
+    <script>
+      WebFont.load({
+        google: { families: ["Public Sans:300,400,500,600,700"] },
+        custom: {
+          families: [
+            "Font Awesome 5 Solid",
+            "Font Awesome 5 Regular",
+            "Font Awesome 5 Brands",
+            "simple-line-icons",
+          ],
+          urls: ["assets/css/fonts.min.css"],
+        },
+        active: function () {
+          sessionStorage.fonts = true;
+        },
+      });
+    </script>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins.min.css" />
+    <link rel="stylesheet" href="assets/css/kaiadmin.min.css" />
+
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link rel="stylesheet" href="assets/css/demo.css" />
+    <style>
+      body {
+          background-color: #f8f9fa; /* Un fondo claro */
+          display: flex;
+          justify-content: center; /* Centra horizontalmente */
+          align-items: center; /* Centra verticalmente */
+          min-height: 100vh;
+          margin: 0; /* Elimina los márgenes predeterminados del body */
+      }
+  
+      .login-container {
+          background-color: #fff;
+          padding: 30px;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          width: 400px; /* Un ancho un poco mayor para que se vea mejor con Bootstrap */
+          text-align: center; /* Centra el contenido dentro del contenedor */
+      }
+  
+      .login-container .logo-space { /* Estilo para el espacio de la imagen */
+          margin-bottom: 20px; /* Espacio debajo de la imagen */
+      }
+  
+      h2 {
+          color: #343a40; /* Texto más oscuro */
+          margin-bottom: 25px;
+      }
+  
+      .form-group label {
+          color: #495057;
+          margin-bottom: 5px;
+          display: block;
+          text-align: left; /* Alinea las etiquetas a la izquierda */
+      }
+  
+      .form-group input {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 15px;
+          border: 1px solid #ced4da;
+          border-radius: 4px;
+          box-sizing: border-box;
+      }
+  
+      .btn-primary {
+          width: 100%;
+      }
+  
+      .signup-link {
+          margin-top: 20px;
+          font-size: 0.9rem;
+          color: #6c757d;
+      }
+  
+      .signup-link a {
+          color: #007bff;
+          text-decoration: none;
+      }
+  
+      .signup-link a:hover {
+          text-decoration: underline;
+      }
+  </style>
+    
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="logo-space">
+          <img src="assets/img/kaiadmin/logo_light.webp" alt="Logo de Berova" style="max-width: 250px; height: auto;">
+      </div>
+      <h2>¡Bienvenidos a Berova!</h2>
+      <form id="loginForm">
+        <div class="form-group">
+            <label for="id_vendedor">ID de Vendedor</label>
+            <input type="number" class="form-control" id="id_vendedor" name="id_vendedor" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Contraseña (4 dígitos)</label>
+            <input type="password" class="form-control" id="password" name="password" maxlength="4" minlength="4" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+    </form>
+      <div class="signup-link">
+          ¿No tienes cuenta? <a href="/forms/vendedores.html">Créala aquí</a>
+      </div>
+  </div>
+
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      
+      const id_vendedor = document.getElementById('id_vendedor').value;
+      const password = document.getElementById('password').value;
+      
+      try {
+          const response = await fetch('https://muebleria-vap7.onrender.com/vendedor/login/', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({ id_vendedor, password })
+          });
+          
+          const data = await response.json();
+          
+          if (data.ok) {
+              // Login exitoso
+              alert('¡Bienvenido ' + data.vendedor.nombre + '!');
+              
+              // Guardar los datos del vendedor en el localStorage
+              localStorage.setItem('vendedor', JSON.stringify({
+                  id_vendedor: data.vendedor.id_vendedor,
+                  nombre: data.vendedor.nombre,
+                  apellido_pat: data.vendedor.apellido_pat,
+                  departamento: data.vendedor.departamento
+              }));
+              
+              // Redirigir al dashboard o página principal
+              window.location.href = 'forms/index.html';
+          } else {
+              // Mostrar error
+              alert(data.mensaje || 'Credenciales incorrectas');
+          }
+      } catch (error) {
+          console.error('Error:', error);
+          alert('Error al conectar con el servidor');
+      }
+  });
+  
+   </script>
+
+ 
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <!-- End Custom template -->
+    </div>
+    <!--   Core JS Files   -->
+    <script src="assets/js/core/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/core/popper.min.js"></script>
+    <script src="assets/js/core/bootstrap.min.js"></script>
+
+    <!-- jQuery Scrollbar -->
+    <script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+    <!-- Chart JS -->
+    <script src="assets/js/plugin/chart.js/chart.min.js"></script>
+
+    <!-- jQuery Sparkline -->
+    <script src="assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+
+    <!-- Chart Circle -->
+    <script src="assets/js/plugin/chart-circle/circles.min.js"></script>
+
+    <!-- Datatables -->
+    <script src="assets/js/plugin/datatables/datatables.min.js"></script>
+
+    <!-- Bootstrap Notify -->
+    <script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+    <!-- jQuery Vector Maps -->
+    <script src="assets/js/plugin/jsvectormap/jsvectormap.min.js"></script>
+    <script src="assets/js/plugin/jsvectormap/world.js"></script>
+
+    <!-- Google Maps Plugin -->
+    <script src="assets/js/plugin/gmaps/gmaps.js"></script>
+
+    <!-- Sweet Alert -->
+    <script src="assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+
+    <!-- Kaiadmin JS -->
+    <script src="assets/js/kaiadmin.min.js"></script>
+
+    <!-- Kaiadmin DEMO methods, don't include it in your project! -->
+    <script src="assets/js/setting-demo2.js"></script>
+  </body>
+</html>
